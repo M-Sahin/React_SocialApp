@@ -3140,11 +3140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\api\\API.csproj",
       "packagesPath": "C:\\Users\\Msahi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\API\\obj\\",
+      "outputPath": "C:\\Users\\Msahi\\OneDrive\\Documenten\\React_SocialApp\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Msahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3210,5 +3210,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: The SSL connection could not be established, see inner exception."
+    }
+  ]
 }

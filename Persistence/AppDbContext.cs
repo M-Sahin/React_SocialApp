@@ -1,10 +1,28 @@
 using System;
-using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Domain;
 
 namespace Persistence;
 
-public class AppDbContext(DbContextOptions options) : DbContext(options)
+public class AppDbContext : DbContext
 {
-    public required DbSet<Activity> Activities { get; set; }
+    public AppDbContext(DbContextOptions options) : base(options)
+    {
+    }
+
+    // Parameterless constructor for design-time support
+    public AppDbContext() : base()
+    {
+    }
+
+    public DbSet<Activity> Activities { get; set; } = null!;
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            // This will be used by EF Design Tools
+            optionsBuilder.UseSqlite("Data source=reactapp.db");
+        }
+    }
 }
